@@ -718,11 +718,15 @@ animation-name: moveinup;
         font-size: 2.4rem;
         padding-left: 0.5em;
     }
-
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
     .technology {
         display: flex;
         flex-wrap: wrap;
         padding:4em 0 0 0  ;
+        justify-content: center;
     }
     .tech-icon{
         width: 5em;
@@ -735,7 +739,7 @@ animation-name: moveinup;
                 }
                                 .showcase,
                                 .showcase2 {
-                                    justify-content: flex-start;}
+                                    justify-content: center;}
                            
 
 }
@@ -788,7 +792,7 @@ animation-name: moveinup;
     }
     
 }
-@media (max-width:37.5em) {
+@media   (max-width:37.5em) {
     .footer {
         display: flex;
         flex-direction: column;
@@ -797,12 +801,14 @@ animation-name: moveinup;
 
     }
     .icon{
-        padding-left:0.5em;
+        padding-left:0.3em;
     }
    .footer-icon{
     padding:0  1em 0.5em;
    }
-
+        .footer-content{
+            padding: 0;
+        }
     .owner {
         padding-top: 2.5em;
 
