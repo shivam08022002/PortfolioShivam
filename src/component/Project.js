@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card/Card";
-import Expense from "../img/expense.png";
+import Expense from "../img/gym.png";
 import Nature from "../img/nature.png";
 import Todolist from "../img/food.png";
 import Github2 from "../img/github2.svg";
@@ -21,10 +21,10 @@ function Project()
                 backHeading="back-heading"
                 heading="Expense Tracker"
                 iconContainer="icon-container"
-                link="https://github.com/sanil011/expense-tracker"
+                link="https://github.com/sanil011/gym"
                 iconClass="back-icon back-icon_github"
                 icon={Github2}
-                link2="https://sanil011.github.io/expense-tracker/"
+                link2="https://sanil011.github.io/gym/"
                 iconClass2=" back-icon back-icon_eye"
                 icon2={Eye}
                 projectpic="project-pic"
