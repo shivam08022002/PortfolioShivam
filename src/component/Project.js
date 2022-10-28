@@ -51,7 +51,7 @@ function Project()
                 secondContainer="back"
                 backContent="back-content"
                 backHeading="back-heading"
-                heading="Natour"
+                heading="Spotify-Clone"
                 iconContainer="icon-container"
                 link="https://github.com/sanil011/spotify-clone"
                 iconClass="back-icon back-icon_github"
