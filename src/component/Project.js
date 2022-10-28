@@ -19,7 +19,7 @@ function Project()
                 secondContainer="back"
                 backContent="back-content"
                 backHeading="back-heading"
-                heading="Gym"
+                heading="Gym website"
                 iconContainer="icon-container"
                 link="https://github.com/sanil011/gym"
                 iconClass="back-icon back-icon_github"
