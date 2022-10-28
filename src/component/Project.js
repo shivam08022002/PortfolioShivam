@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card/Card";
 import Expense from "../img/gym.png";
-import Nature from "../img/nature.png";
+import Spotify from '../img/spotify.png'
 import Todolist from "../img/food.png";
 import Github2 from "../img/github2.svg";
 import Eye from "../img/eye.svg";
@@ -47,16 +47,16 @@ function Project()
             />
             <Card
                 mainContainer="position"
-                pic={Nature}
+                pic={Spotify}
                 secondContainer="back"
                 backContent="back-content"
                 backHeading="back-heading"
                 heading="Natour"
                 iconContainer="icon-container"
-                link="https://github.com/sanil011/naturetour"
+                link="https://github.com/sanil011/spotify-clone"
                 iconClass="back-icon back-icon_github"
                 icon={Github2}
-                link2="https://sanil011.github.io/naturetour/"
+                link2="https://sanil-spotify-clone.netlify.app/"
                 iconClass2=" back-icon back-icon_eye"
                 icon2={Eye}
                 projectpic="project-pic"
