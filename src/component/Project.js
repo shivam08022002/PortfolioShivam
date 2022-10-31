@@ -5,6 +5,8 @@ import Spotify from '../img/spotify.png'
 import Todolist from "../img/food.png";
 import Github2 from "../img/github2.svg";
 import Eye from "../img/eye.svg";
+import Airbnb from '../img/airbnb.png';
+import Landing from '../img/landing.png';
 
 function Project()
 {
@@ -61,6 +63,38 @@ function Project()
                 icon2={Eye}
                 projectpic="project-pic"
             />
+            <Card
+                 mainContainer="position"
+                pic={Airbnb}
+                secondContainer="back"
+                backContent="back-content"
+                backHeading="back-heading"
+                heading="Airbnb-Clone"
+                iconContainer="icon-container"
+                link="https://github.com/sanil011/Windbnb"
+                iconClass="back-icon back-icon_github"
+                icon={Github2}
+                link2="https://windbnb-bay.vercel.app/"
+                iconClass2=" back-icon back-icon_eye"
+                icon2={Eye}
+                projectpic="project-pic"
+            />
+            <Card
+                 mainContainer="position"
+                pic={Landing}
+                secondContainer="back"
+                backContent="back-content"
+                backHeading="back-heading"
+                heading="Landing Page"
+                iconContainer="icon-container"
+                link="https://github.com/sanil011/landing-page"
+                iconClass="back-icon back-icon_github"
+                icon={Github2}
+                link2="https://sanil011.github.io/landing-page/"
+                iconClass2=" back-icon back-icon_eye"
+                icon2={Eye}
+                projectpic="project-pic"
+            />    
             </div>
             </div>  
     )
