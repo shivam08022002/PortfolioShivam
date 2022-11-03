@@ -71,10 +71,10 @@ function Project()
                 backHeading="back-heading"
                 heading="Airbnb-Clone"
                 iconContainer="icon-container"
-                link="https://github.com/sanil011/Windbnb"
+                link="https://github.com/sanil011/windbnb"
                 iconClass="back-icon back-icon_github"
                 icon={Github2}
-                link2="https://windbnb-bay.vercel.app/"
+                link2="https://windbnb-blue.vercel.app/"
                 iconClass2=" back-icon back-icon_eye"
                 icon2={Eye}
                 projectpic="project-pic"
