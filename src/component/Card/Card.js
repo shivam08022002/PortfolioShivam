@@ -8,15 +8,17 @@ const Card = (props) => {
 
       <h1 style={{ textAlign: "center", color: "#9BC9E3" }}>{props.heading}</h1>
       <div style={{ width: "40px", height: "3px", backgroundColor: "orange", marginLeft: "45%" }}></div>
-      <p style={{ color: "#E3E6E7", margin: "2em", lineHeight: "20px", letterSpacing: "1px" }}>
-        {props.about}
-      </p>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
-        {props.tech?.map((db) => (
-          <p style={{ color: "#D8BFBE" }}>{db}</p>
-        ))}
+      <div style={{ display: "flex", flexDirection: "column", alignContent: "space-between" }}>
+        <p style={{ color: "#E3E6E7", margin: "2em", lineHeight: "20px", letterSpacing: "1px" }}>
+          {props.about}
+        </p>
+        <div style={{ display: "flex", justifyContent: "space-around" }}>
+          {props.tech?.map((db) => (
+            <p style={{ color: "#D8BFBE" }}>{db}</p>
+          ))}
+        </div>
       </div>
-      <div className={props.secondContainer}>
+      <div className={props.secondContainer} style={{ borderRadius: "10px" }}>
         <div className={props.backContent}>
           <h3 className={props.backHeading}>{props.heading}</h3>
           <div className={props.iconContainer}>

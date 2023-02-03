@@ -125,7 +125,7 @@ function Project() {
                     icon2={Eye}
                     projectpic="project-pic"
                     tech={["React", "Tailwind", "Redux", "React-Router-Dom"]}
-                    about="Fully responsive hotel booking website that i made from scratch using react,tailwind.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers."
+                    about="Fully responsive hotel booking website that i made from scratch using React,Tailwind and Redux.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers."
                 />
             </div>
         </div>
