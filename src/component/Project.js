@@ -2,11 +2,11 @@ import React from "react";
 import Card from "./Card/Card";
 import Expense from "../img/gym.png";
 import Spotify from '../img/spotify.png'
-import Todolist from "../img/food.png";
+import Calender from "../img/calender.png";
 import Github2 from "../img/github2.svg";
 import Eye from "../img/eye.svg";
 import Airbnb from '../img/airbnb.jpg';
-import Landing from '../img/landing.png';
+import Food from '../img/food.png';
 import Watch from "../img/watch.png";
 
 function Project() {
@@ -55,21 +55,21 @@ function Project() {
 
                 <Card
                     mainContainer="position"
-                    pic={Todolist}
+                    pic={Calender}
                     secondContainer="back"
                     backContent="back-content"
                     backHeading="back-heading"
-                    heading="Food order online"
+                    heading="Calender App"
                     iconContainer="icon-container"
-                    link="https://github.com/sanil011/online-food-order-app"
+                    link="https://calender-99b907.netlify.app/"
                     iconClass="back-icon back-icon_github"
                     icon={Github2}
-                    link2="https://sanil011.github.io/online-food-order-app/"
+                    link2="https://github.com/sanil011/calender"
                     iconClass2=" back-icon back-icon_eye"
                     icon2={Eye}
                     projectpic="project-pic"
-                    tech={["React", "ContextApi", "Css"]}
-                    about="Show the list of available food. Selected food add to the cart dynamically. Price will be set dynamically according to the selected food in the cart."
+                    tech={["React", "ContextApi", "MUI","Redux"]}
+                    about="Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting."
                 />
                 <Card
                     mainContainer="position"
@@ -92,21 +92,21 @@ function Project() {
 
                 <Card
                     mainContainer="position"
-                    pic={Landing}
+                    pic={Food}
                     secondContainer="back"
                     backContent="back-content"
                     backHeading="back-heading"
-                    heading="Landing Page"
+                    heading="Food Ordering App"
                     iconContainer="icon-container"
-                    link="https://github.com/sanil011/landing-page"
+                    link="https://sanil011.github.io/online-food-order-app/"
                     iconClass="back-icon back-icon_github"
                     icon={Github2}
-                    link2="https://sanil011.github.io/landing-page/"
+                    link2="https://github.com/sanil011/online-food-order-app"
                     iconClass2=" back-icon back-icon_eye"
                     icon2={Eye}
                     projectpic="project-pic"
-                    tech={["React", "Tailwind"]}
-                    about="A Responsive landing page"
+                    tech={["React", "ContextApi","Css"]}
+                    about="Show the list of available food. Selected food add to the cart dynamically. Price will be set dynamically according to the selected food in the cart."
                 />
 
                 <Card
