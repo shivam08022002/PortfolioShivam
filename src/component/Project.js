@@ -36,6 +36,44 @@ function Project() {
 
                 <Card
                     mainContainer="position"
+                    pic={Spotify}
+                    secondContainer="back"
+                    backContent="back-content"
+                    backHeading="back-heading"
+                    heading="LYRICKS"
+                    iconContainer="icon-container"
+                    link="https://github.com/sanil011/spotify-clone"
+                    iconClass="back-icon back-icon_github"
+                    icon={Github2}
+                    link2="https://sanil-spotify-clone.netlify.app/"
+                    iconClass2=" back-icon back-icon_eye"
+                    icon2={Eye}
+                    projectpic="project-pic"
+                    tech={["React", "MUI", "Redux", "React-Router-Dom"]}
+                    about="Fully responsive Song listening website like Spotify. Search song of their choice and according to the artist. Show popular songs according to their region using geolocation API."
+                />
+
+                <Card
+                    mainContainer="position"
+                    pic={Airbnb}
+                    secondContainer="back"
+                    backContent="back-content"
+                    backHeading="back-heading"
+                    heading="Windbnb"
+                    iconContainer="icon-container"
+                    link="https://github.com/sanil011/windbnb"
+                    iconClass="back-icon back-icon_github"
+                    icon={Github2}
+                    link2="https://windbnb-blue.vercel.app/"
+                    iconClass2=" back-icon back-icon_eye"
+                    icon2={Eye}
+                    projectpic="project-pic"
+                    tech={["React", "Tailwind", "Redux", "React-Router-Dom"]}
+                    about="Fully responsive hotel booking website that i made from scratch using React,Tailwind and Redux.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers."
+                />
+                
+                <Card
+                    mainContainer="position"
                     pic={Watch}
                     secondContainer="back"
                     backContent="back-content"
@@ -71,24 +109,7 @@ function Project() {
                     tech={["React", "ContextApi", "MUI","Redux"]}
                     about="Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting."
                 />
-                <Card
-                    mainContainer="position"
-                    pic={Spotify}
-                    secondContainer="back"
-                    backContent="back-content"
-                    backHeading="back-heading"
-                    heading="LYRICKS"
-                    iconContainer="icon-container"
-                    link="https://github.com/sanil011/spotify-clone"
-                    iconClass="back-icon back-icon_github"
-                    icon={Github2}
-                    link2="https://sanil-spotify-clone.netlify.app/"
-                    iconClass2=" back-icon back-icon_eye"
-                    icon2={Eye}
-                    projectpic="project-pic"
-                    tech={["React", "MUI", "Redux", "React-Router-Dom"]}
-                    about="Fully responsive Song listening website like Spotify. Search song of their choice and according to the artist. Show popular songs according to their region using geolocation API."
-                />
+                
 
                 <Card
                     mainContainer="position"
@@ -109,24 +130,7 @@ function Project() {
                     about="Show the list of available food. Selected food add to the cart dynamically. Price will be set dynamically according to the selected food in the cart."
                 />
 
-                <Card
-                    mainContainer="position"
-                    pic={Airbnb}
-                    secondContainer="back"
-                    backContent="back-content"
-                    backHeading="back-heading"
-                    heading="Windbnb"
-                    iconContainer="icon-container"
-                    link="https://github.com/sanil011/windbnb"
-                    iconClass="back-icon back-icon_github"
-                    icon={Github2}
-                    link2="https://windbnb-blue.vercel.app/"
-                    iconClass2=" back-icon back-icon_eye"
-                    icon2={Eye}
-                    projectpic="project-pic"
-                    tech={["React", "Tailwind", "Redux", "React-Router-Dom"]}
-                    about="Fully responsive hotel booking website that i made from scratch using React,Tailwind and Redux.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers."
-                />
+                
             </div>
         </div>
     )
