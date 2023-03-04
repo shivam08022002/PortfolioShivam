@@ -9,7 +9,7 @@ const Card = (props) => {
       <h1 style={{ textAlign: "center", color: "#9BC9E3" }}>{props.heading}</h1>
       <div style={{ width: "40px", height: "3px", backgroundColor: "orange", marginLeft: "45%" }}></div>
       <div style={{ display: "flex", flexDirection: "column", alignContent: "space-between" }}>
-        <p style={{ color: "#E3E6E7", margin: "2em", lineHeight: "20px", letterSpacing: "1px" }}>
+        <p style={{ color: "#E3E6E7", margin: "1em", lineHeight: "20px", letterSpacing: "1px",textAlign:"left" }}>
           {props.about}
         </p>
         <div style={{ display: "flex", justifyContent: "space-around" }}>
