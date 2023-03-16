@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "./Card/Card";
-import Expense from "../img/gym.png";
+import Quiz from "../img/quiz.png"
 import Spotify from '../img/spotify.png'
 import Calender from "../img/calender.png";
 import Github2 from "../img/github2.svg";
 import Eye from "../img/eye.svg";
 import Airbnb from '../img/airbnb.png';
-import Food from '../img/food.png';
+import Algorithm from "../img/algorithm.png";
 import Watch from "../img/watch.png";
 
 function Project() {
@@ -59,21 +59,21 @@ function Project() {
 
                 <Card
                     mainContainer="position"
-                    pic={Calender}
+                    pic={Algorithm}
                     secondContainer="back"
                     backContent="back-content"
                     backHeading="back-heading"
-                    heading="Calender App"
+                    heading="Algorithm Visualizer"
                     iconContainer="icon-container"
-                    link=" https://github.com/sanil011/calender"
+                    link="https://github.com/sanil011/Algorithm-Visualizer"
                     iconClass="back-icon back-icon_github"
                     icon={Github2}
-                    link2="https://calender-99b907.netlify.app/"
+                    link2="https://algorithm-visualizer-beige.vercel.app/"
                     iconClass2=" back-icon back-icon_eye"
                     icon2={Eye}
                     projectpic="project-pic"
-                    tech={["React", "ContextApi", "MUI","Redux"]}
-                    about="Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting."
+                    tech={["Next", "Typescript", "Tailwind"]}
+                    about="Show the algorithm in animation how the algorithm works"
                 />
                 
                 <Card
@@ -94,42 +94,44 @@ function Project() {
                     tech={["React", "MUI", "Redux", "React-Router-Dom"]}
                     about="Fully responsive Song listening website like Spotify. Search song of their choice and according to the artist. Show popular songs according to their region using geolocation API."
                 />
+              
+
                 <Card
                     mainContainer="position"
-                    pic={Food}
+                    pic={Quiz}
                     secondContainer="back"
                     backContent="back-content"
                     backHeading="back-heading"
-                    heading="Food Ordering App"
+                    heading="Quiz"
                     iconContainer="icon-container"
-                    link="https://sanil011.github.io/online-food-order-app/"
+                    link="https://github.com/sanil011/quiz-app"
                     iconClass="back-icon back-icon_github"
                     icon={Github2}
-                    link2="https://github.com/sanil011/online-food-order-app"
+                    link2="https://quiz-app-lilac-iota.vercel.app/"
                     iconClass2=" back-icon back-icon_eye"
                     icon2={Eye}
                     projectpic="project-pic"
-                    tech={["React", "ContextApi","Css"]}
-                    about="Show the list of available food. Selected food add to the cart dynamically. Price will be set dynamically according to the selected food in the cart."
+                    tech={["Next", "MUI"]}
+                    about="A Quiz app in you can choose a lot of category and give quiz"
                 />
 
                 <Card
                     mainContainer="position"
-                    pic={Expense}
+                    pic={Calender}
                     secondContainer="back"
                     backContent="back-content"
                     backHeading="back-heading"
-                    heading="Gym website"
+                    heading="Calender App"
                     iconContainer="icon-container"
-                    link="https://github.com/sanil011/gym"
+                    link=" https://github.com/sanil011/calender"
                     iconClass="back-icon back-icon_github"
                     icon={Github2}
-                    link2="https://sanil011.github.io/gym/"
+                    link2="https://calender-99b907.netlify.app/"
                     iconClass2=" back-icon back-icon_eye"
                     icon2={Eye}
                     projectpic="project-pic"
-                    tech={["React", "MUI", "Redux"]}
-                    about="A gym app that show exercise acc to search or target muscle."
+                    tech={["React", "ContextApi", "MUI", "Redux"]}
+                    about="Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting."
                 />
             </div>
         </div>
