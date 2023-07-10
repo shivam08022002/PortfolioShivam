@@ -9,6 +9,8 @@ import Sun from "./sun.svg";
 import Linkedin from "./iconBlack/linkedin-2.svg";
 import Twitter from "./iconBlack/twitter.svg";
 import Github from "./iconBlack/github.svg";
+import Hashnode from "./iconBlack/hashnode.svg";
+import hashnode from "./iconWhite/hashnode.svg";
 import Link from "./iconWhite/linkedin-2.svg";
 import Twitt from "./iconWhite/twitter.svg";
 import Git from "./iconWhite/github.svg";
@@ -98,7 +100,8 @@ function App(){
        <Header 
        linkedin={ `${onClick ?Linkedin:Link}`}
         github={`${onClick ?Github:Git}`}
-        twitter={`${onClick ?Twitter:Twitt}`}
+              twitter={`${onClick ? Twitter : Twitt}`}
+              Hashnode={`${onClick ? Hashnode: hashnode}`}
       /> 
       
       

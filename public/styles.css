@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-color: #161f3b;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 .img {
@@ -93,7 +94,7 @@ body {
 .header {
     z-index: 500;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:28em 1fr 1fr;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 5px 1rem rgba(0, 0, 0, .2);
@@ -135,7 +136,7 @@ body {
 
 .icons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     list-style-type: none;
     margin-right: 15px;
 
@@ -149,6 +150,7 @@ body {
 
 .icons-icon {
 
+    margin-left: 3.5em;
     transition: transform 0.32s;
 }
 
