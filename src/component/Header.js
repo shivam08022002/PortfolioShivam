@@ -69,7 +69,7 @@ function Header(props) {
                 <div className="col-1">
                     <p>Hello! 👋 My name is </p>
                     <h1 className="name">SANIL</h1>
-                    <p>Web <span>Developer</span> ✨</p>
+                    <p>Frontend <span>Developer</span> ✨</p>
                     <a href="https://twitter.com/Sanil011" rel="noreferrer" target="_blank" >
                         <button className="btn btn-color">say hii 👋 on twitter</button>
                     </a>
