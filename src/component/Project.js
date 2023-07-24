@@ -8,6 +8,7 @@ import Eye from "../img/eye.svg";
 import Airbnb from '../img/airbnb.png';
 import Algorithm from "../img/algorithm.png";
 import Watch from "../img/watch.png";
+import CodeBoard from "../img/codeboard.png";
 
 function Project() {
     return (
@@ -19,24 +20,7 @@ function Project() {
 
                 
 
-                <Card
-                    mainContainer="position"
-                    pic={Airbnb}
-                    secondContainer="back"
-                    backContent="back-content"
-                    backHeading="back-heading"
-                    heading="Estates"
-                    iconContainer="icon-container"
-                    link="https://github.com/sanil011/Estates"
-                    iconClass="back-icon back-icon_github"
-                    icon={Github2}
-                    link2="https://estates-teal.vercel.app/"
-                    iconClass2=" back-icon back-icon_eye"
-                    icon2={Eye}
-                    projectpic="project-pic"
-                    tech={["React", "Tailwind", "Redux", "React-Router-Dom"]}
-                    about="Fully responsive Property rental website that i made from scratch using React,Tailwind and Redux.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers."
-                />
+                
                 
                 <Card
                     mainContainer="position"
@@ -95,6 +79,24 @@ function Project() {
                     about="Fully responsive Song listening website like Spotify. Search song of their choice and according to the artist. Show popular songs according to their region using geolocation API."
                 />
               
+                <Card
+                    mainContainer="position"
+                    pic={Airbnb}
+                    secondContainer="back"
+                    backContent="back-content"
+                    backHeading="back-heading"
+                    heading="Estates"
+                    iconContainer="icon-container"
+                    link="https://github.com/sanil011/Estates"
+                    iconClass="back-icon back-icon_github"
+                    icon={Github2}
+                    link2="https://estates-teal.vercel.app/"
+                    iconClass2=" back-icon back-icon_eye"
+                    icon2={Eye}
+                    projectpic="project-pic"
+                    tech={["React", "Tailwind", "Redux", "React-Router-Dom"]}
+                    about="Fully responsive Property rental website that i made from scratch using React,Tailwind and Redux.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers."
+                />
 
                 <Card
                     mainContainer="position"
@@ -132,6 +134,24 @@ function Project() {
                     projectpic="project-pic"
                     tech={["React", "ContextApi", "MUI", "Redux"]}
                     about="Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting."
+                />
+                <Card
+                    mainContainer="position"
+                    pic={CodeBoard}
+                    secondContainer="back"
+                    backContent="back-content"
+                    backHeading="back-heading"
+                    heading="Code-Share"
+                    iconContainer="icon-container"
+                    link="https://github.com/sanil011/code-share"
+                    iconClass="back-icon back-icon_github"
+                    icon={Github2}
+                    link2="https://code-share-ny9d.onrender.com"
+                    iconClass2=" back-icon back-icon_eye"
+                    icon2={Eye}
+                    projectpic="project-pic"
+                    tech={["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"]}
+                    about="A code editor in which by sharing the roomId you can write a code that your friend can also see in real time."
                 />
             </div>
         </div>
