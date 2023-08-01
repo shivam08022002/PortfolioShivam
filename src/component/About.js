@@ -7,7 +7,7 @@ function About() {
         <div className="about" id="about">
             <div className="about-content">
                 <h1 className="name"> about me</h1>
-                <p >I'm a 3nd year under graduate student who is enthusiastic about tech. First and foremost, I love writing code
+                <p >I'm a 4nd year under graduate student who is enthusiastic about tech. First and foremost, I love writing code
                     . I have been obsessed with the idea of using software to solve practical problems.
                     This passion carried me through my education at my university.I studied new languages and algorithms and there is much yet to learn.
                     <br />
