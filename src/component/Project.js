@@ -113,7 +113,7 @@ function Project() {
                     iconClass2=" back-icon back-icon_eye"
                     icon2={Eye}
                     projectpic="project-pic"
-                    tech={["Next", "MUI"]}
+                    tech={["Next", "MUI", "React-Router-Dom"]}
                     about="A Quiz app in you can choose a lot of category and give quiz"
                 />
 
