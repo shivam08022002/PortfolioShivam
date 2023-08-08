@@ -10,6 +10,17 @@ body {
     background-color: #161f3b;
     position: relative;
     scroll-behavior: smooth;
+    scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* Internet Explorer and Edge */
+}
+
+
+
+/* Hide scrollbar for Chrome/Safari/Edge */
+::-webkit-scrollbar {
+    display: none;
 }
 
 .img {

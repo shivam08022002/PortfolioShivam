@@ -1,4 +1,4 @@
-import React,{useState,useRef,useEffect} from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Header from "./component/Header";
 import About from "./component/About";
 import Project from "./component/Project";
@@ -18,13 +18,13 @@ import "./app.css"
 
 
 
-function App(){
+function App() {
 
-    const [onClick, setClick]= useState(0);
-    function toggle(){
-        setClick(!onClick);
-    }
-  
+  const [onClick, setClick] = useState(0);
+  function toggle() {
+    setClick(!onClick);
+  }
+
   const secondaryCursor = useRef(null);
   const mainCursor = useRef(null);
   const positionRef = useRef({
@@ -89,40 +89,41 @@ function App(){
     };
     followMouse();
   }, []);
-  
-    return(  
-      <div >
-        <div className={`cursor-wrapper`} style={{position:"relative"}}>
-   <div className= {`${onClick ?'background-light': 'background'}`}>
-    <img className="toggle " onClick={toggle} src={ `${onClick ?Moon:Sun}`} alt="sun"/> 
+
+  return (
+    <div >
+      <div className={`cursor-wrapper`} style={{ position: "relative" }}>
+        <div className={`${onClick ? 'background-light' : 'background'}`}>
+          <img className="toggle " onClick={toggle} src={`${onClick ? Moon : Sun}`} alt="sun" />
 
 
-       <Header 
-       linkedin={ `${onClick ?Linkedin:Link}`}
-        github={`${onClick ?Github:Git}`}
-              twitter={`${onClick ? Twitter : Twitt}`}
-              Hashnode={`${onClick ? Hashnode: hashnode}`}
-      /> 
-      
-      
-       <About/>
-       <Project/>
-       <Technologies/>
-       <Footer
-         linkedin={`${onClick ?Linkedin:Link}`}
-        github={`${onClick ?Github:Git}`}
-        twitter={`${onClick ?Twitter:Twitt}`}
-       />
-       </div>
+          <Header
+            linkedin={`${onClick ? Linkedin : Link}`}
+            github={`${onClick ? Github : Git}`}
+            twitter={`${onClick ? Twitter : Twitt}`}
+            Hashnode={`${onClick ? Hashnode : hashnode}`}
+          />
 
-  <div className="main-cursor " ref={mainCursor}>
-    <div className="main-cursor-background"></div>
-  </div>
-  <div className="secondary-cursor" ref={secondaryCursor}>
-    <div className="cursor-background"></div>
-  </div>
-</div>
-       </div>
-    )
+
+          <About />
+          <Project />
+          <Technologies />
+          <Footer
+            linkedin={`${onClick ? Linkedin : Link}`}
+            github={`${onClick ? Github : Git}`}
+            twitter={`${onClick ? Twitter : Twitt}`}
+            Hashnode={`${onClick ? Hashnode : hashnode}`}
+          />
+        </div>
+
+        <div className="main-cursor " ref={mainCursor}>
+          <div className="main-cursor-background"></div>
+        </div>
+        <div className="secondary-cursor" ref={secondaryCursor}>
+          <div className="cursor-background"></div>
+        </div>
+      </div>
+    </div>
+  )
 }
 export default App;
