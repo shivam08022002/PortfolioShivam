@@ -62,23 +62,23 @@ function Project() {
                 
                 <Card
                     mainContainer="position"
-                    pic={Spotify}
+                    pic={CodeBoard}
                     secondContainer="back"
                     backContent="back-content"
                     backHeading="back-heading"
-                    heading="LYRICKS"
+                    heading="Code-Share"
                     iconContainer="icon-container"
-                    link="https://github.com/sanil011/spotify-clone"
+                    link="https://github.com/sanil011/code-share"
                     iconClass="back-icon back-icon_github"
                     icon={Github2}
-                    link2="https://sanil-spotify-clone.netlify.app/"
+                    link2="https://code-share-ny9d.onrender.com"
                     iconClass2=" back-icon back-icon_eye"
                     icon2={Eye}
                     projectpic="project-pic"
-                    tech={["React", "MUI", "Redux", "React-Router-Dom"]}
-                    about="Fully responsive Song listening website like Spotify. Search song of their choice and according to the artist. Show popular songs according to their region using geolocation API."
+                    tech={["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"]}
+                    about="A code editor in which by sharing the roomId you can write a code that your friend can also see in real time."
                 />
-              
+
                 <Card
                     mainContainer="position"
                     pic={Airbnb}
@@ -132,27 +132,30 @@ function Project() {
                     iconClass2=" back-icon back-icon_eye"
                     icon2={Eye}
                     projectpic="project-pic"
-                    tech={["React", "ContextApi", "MUI", "Redux"]}
+                    tech={["React", "ContextApi", "MUI", "Redux", "Firebase"]}
                     about="Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting."
                 />
+                
+
                 <Card
                     mainContainer="position"
-                    pic={CodeBoard}
+                    pic={Spotify}
                     secondContainer="back"
                     backContent="back-content"
                     backHeading="back-heading"
-                    heading="Code-Share"
+                    heading="LYRICKS"
                     iconContainer="icon-container"
-                    link="https://github.com/sanil011/code-share"
+                    link="https://github.com/sanil011/spotify-clone"
                     iconClass="back-icon back-icon_github"
                     icon={Github2}
-                    link2="https://code-share-ny9d.onrender.com"
+                    link2="https://sanil-spotify-clone.netlify.app/"
                     iconClass2=" back-icon back-icon_eye"
                     icon2={Eye}
                     projectpic="project-pic"
-                    tech={["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"]}
-                    about="A code editor in which by sharing the roomId you can write a code that your friend can also see in real time."
+                    tech={["React", "MUI", "Redux", "React-Router-Dom"]}
+                    about="Fully responsive Song listening website like Spotify. Search song of their choice and according to the artist. Show popular songs according to their region using geolocation API."
                 />
+
             </div>
         </div>
     )
