@@ -9,6 +9,7 @@ import Airbnb from '../img/airbnb.png';
 import Algorithm from "../img/algorithm.png";
 import Watch from "../img/watch.png";
 import CodeBoard from "../img/codeboard.png";
+import Excel from "../img/excel.png";
 
 function Project() {
     return (
@@ -16,12 +17,12 @@ function Project() {
         <div className="project" id="project">
             <h1 className="name">Projects</h1>
             <div className="project-item">
-                
 
-                
 
-                
-                
+
+
+
+
                 <Card
                     mainContainer="position"
                     pic={Watch}
@@ -39,6 +40,52 @@ function Project() {
                     projectpic="project-pic"
                     tech={["Next.js", "MUI", "Redux"]}
                     about="An E-commerce app for watch. Users can filter the watch according to brand, price, strap and colour.Users can also add watches to their wishlists."
+                />
+
+               
+
+                <Card
+                    mainContainer="position"
+                    pic={CodeBoard}
+                    secondContainer="back"
+                    backContent="back-content"
+                    backHeading="back-heading"
+                    heading="Code-Share"
+                    iconContainer="icon-container"
+                    link="https://github.com/sanil011/code-share"
+                    iconClass="back-icon back-icon_github"
+                    icon={Github2}
+                    link2="https://code-share-ny9d.onrender.com"
+                    iconClass2=" back-icon back-icon_eye"
+                    icon2={Eye}
+                    projectpic="project-pic"
+                    tech={["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"]}
+                    about="A code editor in which by sharing the roomId you can write a code that your friend can also see in real time."
+                />
+
+                <Card
+                    mainContainer="position"
+                    pic={Excel}
+                    secondContainer="back"
+                    backContent="back-content"
+                    backHeading="back-heading"
+                    heading="Excel"
+                    iconContainer="icon-container"
+                    link="https://github.com/sanil011/ExcelClone"
+                    iconClass="back-icon back-icon_github"
+                    icon={Github2}
+                    link2="https://sanil011.github.io/ExcelClone/"
+                    iconClass2=" back-icon back-icon_eye"
+                    icon2={Eye}
+                    projectpic="project-pic"
+                    tech={["Javascript", "CSS", "HTML"]}
+                    about="Comprehensive Excel functionalities.
+Isolated cell text formatting.
+Cell-to-cell relationships through formulas.
+Download and upload capabilities.
+Cycle detection and formula warning.
+Cut, copy, paste support.
+Multi-sheet functionality."
                 />
 
                 <Card
@@ -59,26 +106,6 @@ function Project() {
                     tech={["Next", "Typescript", "Tailwind"]}
                     about="Show the algorithm in animation how the algorithm works"
                 />
-                
-                <Card
-                    mainContainer="position"
-                    pic={CodeBoard}
-                    secondContainer="back"
-                    backContent="back-content"
-                    backHeading="back-heading"
-                    heading="Code-Share"
-                    iconContainer="icon-container"
-                    link="https://github.com/sanil011/code-share"
-                    iconClass="back-icon back-icon_github"
-                    icon={Github2}
-                    link2="https://code-share-ny9d.onrender.com"
-                    iconClass2=" back-icon back-icon_eye"
-                    icon2={Eye}
-                    projectpic="project-pic"
-                    tech={["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"]}
-                    about="A code editor in which by sharing the roomId you can write a code that your friend can also see in real time."
-                />
-
                 <Card
                     mainContainer="position"
                     pic={Airbnb}
@@ -135,7 +162,7 @@ function Project() {
                     tech={["React", "ContextApi", "MUI", "Redux", "Firebase"]}
                     about="Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting."
                 />
-                
+
 
                 <Card
                     mainContainer="position"
@@ -155,6 +182,7 @@ function Project() {
                     tech={["React", "MUI", "Redux", "React-Router-Dom"]}
                     about="Fully responsive Song listening website like Spotify. Search song of their choice and according to the artist. Show popular songs according to their region using geolocation API."
                 />
+                
 
             </div>
         </div>
