@@ -1,19 +1,13 @@
-
-import React, { useState } from "react";
-
-
+import React, { useState } from "react"
 import Man1 from "../img/Man1.png";
-
-
 
 function Header(props) {
     const [showLinks, setShowLinks] = useState(false);
 
     function myFunction() {
-
         setShowLinks(!showLinks);
-
     }
+    
     return (
         <div>
             <header className="header">
