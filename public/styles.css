@@ -50,12 +50,18 @@ body {
 
 .back-on {
     display: flex;
+    height: calc(100vh - 50px);
+    position: relative;
+    z-index: 100;
     justify-content: center;
     transition: all 1s linear;
     transform: translateY(0%);
 }
 
 .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style-type: none;
     font-size: 2em;
 }
@@ -101,19 +107,6 @@ body {
 }
 
 
-
-
-
-.header {
-    z-index: 500;
-    display: grid;
-    grid-template-columns:28em 1fr 1fr;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 5px 1rem rgba(0, 0, 0, .2);
-
-}
-
 .title {
     padding-left: 1.4em;
     font-size: 1.5rem;
@@ -152,7 +145,7 @@ body {
     justify-content: flex-end;
     list-style-type: none;
     margin-right: 15px;
-
+gap: 2em;
 
 }
 
@@ -162,8 +155,6 @@ body {
 }
 
 .icons-icon {
-
-    margin-left: 3.5em;
     transition: transform 0.32s;
 }
 
@@ -183,14 +174,11 @@ body {
 }
 
 @media screen and (max-width:37.5em) {
-    .header {
-        display: flex;
-        justify-content: space-between;
-    }
-
     .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
+        align-content: flex-end;
+        flex-wrap: wrap;
     }
 
     /* .menu-back{
@@ -210,11 +198,6 @@ display: flex;
 
 @media (max-width:75em) {
 
-    .header {
-        grid-template-columns: 1fr 2em 1fr 1fr 1em;
-
-    }
-
     .menu {
         grid-column: 3/-2;
     }
@@ -225,10 +208,6 @@ display: flex;
 }
 
 @media (max-width:56.25em) {
-    .header {
-        grid-template-columns: 1fr 1fr 1fr 1em;
-
-    }
 
     .menu {
         grid-column: 2/-2;
@@ -835,6 +814,7 @@ display: flex;
 .icon {
     display: flex;
     justify-content: space-evenly;
+    gap: 2em;
     list-style-type: none;
 }
 
@@ -864,16 +844,16 @@ display: flex;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 3em 0 0 0;
+        padding:0;
 
     }
 
     .icon {
-        padding-left: 0.3em;
+        /* padding-left: 0.3em; */
     }
 
     .footer-icon {
-        padding: 0 1em 0.5em;
+        /* padding: 0 1em 0.5em; */
     }
 
     .footer-content {

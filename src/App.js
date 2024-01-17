@@ -14,114 +14,67 @@ import hashnode from "./iconWhite/hashnode.svg";
 import Link from "./iconWhite/linkedin-2.svg";
 import Twitt from "./iconWhite/twitter.svg";
 import Git from "./iconWhite/github.svg";
+import Cassette from "./img/cassette.png"
+import Sound from "./img/3i.mp3"
+import Click1 from "./img/click1.mp3"
+import useSound from 'use-sound';
+import Jobs from "./component/jobs";
 import "./app.css"
-
 
 
 function App() {
 
   const [onClick, setClick] = useState(0);
+  const [play] = useSound(Click1);
   function toggle() {
     setClick(!onClick);
   }
-
-  const secondaryCursor = useRef(null);
-  const mainCursor = useRef(null);
-  const positionRef = useRef({
-    mouseX: 0,
-    mouseY: 0,
-    destinationX: 0,
-    destinationY: 0,
-    distanceX: 0,
-    distanceY: 0,
-    key: -1,
-  });
-
-  useEffect(() => {
-    document.addEventListener("mousemove", (event) => {
-      const { clientX, clientY } = event;
-
-      const mouseX = clientX;
-      const mouseY = clientY;
-
-      positionRef.current.mouseX =
-        mouseX - secondaryCursor.current.clientWidth / 2;
-      positionRef.current.mouseY =
-        mouseY - secondaryCursor.current.clientHeight / 2;
-      mainCursor.current.style.transform = `translate3d(${mouseX -
-        mainCursor.current.clientWidth / 2}px, ${mouseY -
-        mainCursor.current.clientHeight / 2}px, 0)`;
-    });
-
-    return () => { };
-  }, []);
-
-  useEffect(() => {
-    const followMouse = () => {
-      positionRef.current.key = requestAnimationFrame(followMouse);
-      const {
-        mouseX,
-        mouseY,
-        destinationX,
-        destinationY,
-        distanceX,
-        distanceY,
-      } = positionRef.current;
-      if (!destinationX || !destinationY) {
-        positionRef.current.destinationX = mouseX;
-        positionRef.current.destinationY = mouseY;
-      } else {
-        positionRef.current.distanceX = (mouseX - destinationX) * 0.1;
-        positionRef.current.distanceY = (mouseY - destinationY) * 0.1;
-        if (
-          Math.abs(positionRef.current.distanceX) +
-          Math.abs(positionRef.current.distanceY) <
-          0.1
-        ) {
-          positionRef.current.destinationX = mouseX;
-          positionRef.current.destinationY = mouseY;
-        } else {
-          positionRef.current.destinationX += distanceX;
-          positionRef.current.destinationY += distanceY;
-        }
-      }
-      secondaryCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
-    };
-    followMouse();
-  }, []);
+  const [showLinks, setShowLinks] = useState(false);
 
   return (
-    <div >
-      <div className={`cursor-wrapper`} style={{ position: "relative" }}>
+    <div className={`${showLinks && "h-screen overflow-hidden"}`} >
         <div className={`${onClick ? 'background-light' : 'background'}`}>
-          <img className="toggle " onClick={toggle} src={`${onClick ? Moon : Sun}`} alt="sun" />
+          <img className="toggle" onClick={() => { toggle();play() }} src={`${onClick ? Moon : Sun}`} alt="sun" />
 
 
           <Header
+            showLinks={showLinks}
+            setShowLinks={setShowLinks}
             linkedin={`${onClick ? Linkedin : Link}`}
             github={`${onClick ? Github : Git}`}
             twitter={`${onClick ? Twitter : Twitt}`}
             Hashnode={`${onClick ? Hashnode : hashnode}`}
           />
 
-
+        <div className="max-w-[1380px] mx-auto">
           <About />
-          <Project />
           <Technologies />
+          <Jobs />
+          <div className="py-16 px-2 tablet:px-12 desktop:px-20">
+            <p className="name desktop:text-3xl tablet:text-xl text-base ">wanna hear a secret?</p>
+            <p className="name desktop:text-5xl tablet:text-2xl text-xl ">why i choose Engineering?</p>
+            <div className="flex gap-4 items-center mt-8">
+              <div className="w-[250px] h-[150px] tablet:w-[350px] tablet:h-[250px] desktop:w-[450px] desktop:h-[300px]">
+              <img src={Cassette} className="object-cover w-full h-full" />
+              </div>
+              <audio controls>
+                <source src="horse.ogg" type="audio/ogg" />
+                <source src={Sound} type="audio/mpeg" />
+                Your browser does not support the audio tag.
+              </audio>
+
+            </div>
+          </div>
+        
+          <Project dark={onClick} />
+        </div>
+
           <Footer
             linkedin={`${onClick ? Linkedin : Link}`}
             github={`${onClick ? Github : Git}`}
             twitter={`${onClick ? Twitter : Twitt}`}
             Hashnode={`${onClick ? Hashnode : hashnode}`}
           />
-        </div>
-
-        <div className="main-cursor " ref={mainCursor}>
-          <div className="main-cursor-background"></div>
-        </div>
-        <div className="secondary-cursor" ref={secondaryCursor}>
-          <div className="cursor-background"></div>
-        </div>
       </div>
     </div>
   )

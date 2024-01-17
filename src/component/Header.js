@@ -1,18 +1,18 @@
-import React, { useState } from "react"
+import React from "react"
 import Man1 from "../img/Man1.png";
 
 function Header(props) {
-    const [showLinks, setShowLinks] = useState(false);
+   
 
     function myFunction() {
-        setShowLinks(!showLinks);
+        props.setShowLinks(!props.showLinks);
     }
     
     return (
         <div>
-            <header className="header">
+            <header className="desktop:grid-cols-[28em_1fr_1fr] items-center justify-between shadow-outline flex tablet:grid tablet:grid-cols-[1fr_2em_1fr_1fr_1em] laptop:grid-cols-[1fr_1fr_1fr_1em]  ">
 
-                <h1 className="title"> &lt;Sanil/&gt;</h1>
+                <h1 className="title "> &lt;Sanil/&gt;</h1>
 
                 <ul className="menu">
                     <li className="list-item"><a className="menu-item " href="#about">About</a> </li>
@@ -23,7 +23,7 @@ function Header(props) {
 
 
 
-                <div className={`${showLinks ? 'container change' : "container "}`} onClick={myFunction}>
+                <div className={`${props.showLinks ? 'container change' : "container "}`} onClick={myFunction}>
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>
@@ -51,8 +51,8 @@ function Header(props) {
 
             </header>
 
-            <div className={`${showLinks ? 'back-slider back-on' : "back-slider "}`}  >
-                <ul className="slider"  >
+            <div className={`${props.showLinks ? 'back-slider back-on' : "back-slider "}`}  >
+                <ul className="slider">
                     <li ><a className="slider-item" href="#about">About</a> </li>
                     <li ><a className="slider-item" href="#project">Project</a></li>
                     <li ><a className="slider-item" href="#technology">Technologies</a></li>
@@ -60,7 +60,7 @@ function Header(props) {
             </div>
 
             <div className="content">
-                <div className="col-1">
+                <div className="col-1 flex flex-col gap-3">
                     <p>Hello! 👋 My name is </p>
                     <h1 className="name">SANIL</h1>
                     <p>Frontend <span>Developer</span> ✨</p>

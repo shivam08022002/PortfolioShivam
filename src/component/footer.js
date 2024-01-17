@@ -5,13 +5,13 @@ function Footer (props) {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <h4 className="owner">
+                <h4 className="owner font-spaceFont">
                     Developed by Sanil<br />
                     Build with Reactjs
                 </h4>
             </div>
 
-            <div className=" icon ">
+            <div className="icon cursor-pointer">
                 <a href="https://www.linkedin.com/in/sanil-pal-48370b223/" className="icons-icon footer-icon" rel="noreferrer" target="_blank">
                     <img className="social footer-icon" src={props.linkedin} alt="twitter" />
 
