@@ -6,8 +6,9 @@ import Algorithm from "../img/algorithm.png";
 import Watch from "../img/watch.png";
 import CodeBoard from "../img/codeboard.png";
 import Excel from "../img/excel.png";
+import Sketch from "../img/sketch.png";
 import Card from './card'
-function Project({dark}) {
+function Project({ dark }) {
     let [hoveredIndex, setHoveredIndex] = useState(null);
     const projects = [
         {
@@ -19,9 +20,13 @@ function Project({dark}) {
             hostedLink: "https://code-share-ny9d.onrender.com", techStack: ["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"], about: "A code editor in which by sharing the roomId you can write a code that your friend can also see in real time."
         },
         {
-            id: "3", heading: "Google Doc Clone", githubLink: "https://github.com/sanil011/ExcelClone", pic: Excel,
-            hostedLink: "https://sanil011.github.io/ExcelClone/", techStack: ["Javascript", "CSS", "HTML"], about: "Comprehensive Doc functionalities. Isolated cell text formatting. Cell-to-cell relationships through formulas.Download and upload capabilities.Cycle detection and formula warning.Cut, copy, paste support. Multi - sheet functionality."
+            id: "3", heading: "Google Doc Clone", githubLink: "https://github.com/sanil011/SketchBoard", pic: Sketch,
+            hostedLink: "https://sketch-board-two.vercel.app/", techStack: ["Vite","React","Typescript","Css"], about: "Express your creativity by sketching anything on the canvas.Save and download your artistic creations.Utilize the zoom functionality for a closer look.Enjoy the panning feature, offering the illusion of an infinite canvas.Take advantage of the Undo and Redo features for added convenience."
         },
+        // {
+        //     id: "7", heading: "Sketch Board", githubLink: "https://github.com/sanil011/ExcelClone", pic: Excel,
+        //     hostedLink: "https://sanil011.github.io/ExcelClone/", techStack: ["Javascript", "CSS", "HTML"], about: "Comprehensive Doc functionalities. Isolated cell text formatting. Cell-to-cell relationships through formulas.Download and upload capabilities.Cycle detection and formula warning.Cut, copy, paste support. Multi - sheet functionality."
+        // },
         {
             id: "4", heading: "Algorithm Visualizer", githubLink: "https://github.com/sanil011/Algorithm-Visualizer", pic: Algorithm,
             hostedLink: "https://algorithm-visualizer-beige.vercel.app/", techStack: ["Next", "Typescript", "Tailwind"], about: "Show the algorithm in animation how the algorithm works"
@@ -37,13 +42,13 @@ function Project({dark}) {
     ]
 
     const projectLess = [
-        { id: "1", title: 'Calender Application', github: "https://github.com/sanil011/calender", link: "https://calender-99b907.netlify.app/", description: "Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting.", tech: ["React", "Firebase", "Redux"] }
-        , { id: "2", title: 'Estate', github: "https://github.com/sanil011/Estates", link: "https://estates-teal.vercel.app/", description: "Fully responsive hotel booking website that i made from scratch using react,tailwind.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers.", tech: ["React", "Tailwind", "Redux", 'MUI'] }
-    
-    ,{
-        id: "3", title: "LYRICKS", github: "https://github.com/sanil011/spotify-clone", 
-            link: "https://sanil-spotify-clone.netlify.app/", tech: ["React", "MUI", "Redux", "React-Router-Dom"], description: "Fully responsive Song listening website like Spotify. Search song of their choice and according to the artist. Show popular songs according to their region using geolocation API."
-        }]
+        {
+            id: "1", title: "Tic Tac Toe", github: "https://github.com/sanil011/crafts",
+            link: "https://crafts-jade.vercel.app/", tech: ["React", "Tailwindcss"], description: "Create a versatile TicTacToe game with pause/resume, a disabled initial restart button, and real-time status updates. Add a history feature for seamless backward and forward navigation during gameplay."
+        }
+        , { id: "2", title: 'Calender Application', github: "https://github.com/sanil011/calender", link: "https://calender-99b907.netlify.app/", description: "Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting.", tech: ["React", "Firebase", "Redux"] }
+        , { id: "3", title: 'Estate', github: "https://github.com/sanil011/Estates", link: "https://estates-teal.vercel.app/", description: "Fully responsive hotel booking website that i made from scratch using react,tailwind.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers.", tech: ["React", "Tailwind", "Redux", 'MUI'] }
+    ]
     return (
 
         <div className="project" id="project">
