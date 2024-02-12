@@ -17,7 +17,7 @@ function Project({ dark }) {
         },
         {
             id: "2", heading: "Code Share", githubLink: "https://github.com/sanil011/code-share", pic: CodeBoard,
-            hostedLink: "https://code-share-ny9d.onrender.com", techStack: ["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"], about: "A code editor in which by sharing the roomId you can write a code that your friend can also see in real time."
+            hostedLink: "https://code-share-ny9d.onrender.com", techStack: ["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"], about: "A code editor in which by sharing the roomId you can write a code that your friend can also see in real time. There is also a doubt section where you can ask your doubt and chat with other memebers."
         },
         {
             id: "3", heading: "Google Doc Clone", githubLink: "https://github.com/sanil011/SketchBoard", pic: Sketch,
