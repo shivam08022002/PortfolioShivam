@@ -7,9 +7,9 @@ const Jobs = () => {
     { company: "ZeviAi", duration: "May,2023 - June,2023", post: "Frontend Engineering Intern", link:"https://www.linkedin.com/company/zevi-ai/" },
     { company: "Oyesters", duration: "November,2022 - January,2023", post: "Frontend Intern", link:"https://www.linkedin.com/company/oyesters/" },];
   return (
-    <div className='mb-12 px-2 tablet:px-12 desktop:px-20'>
+    <div className='mb-12 px-2 tablet:px-12 desktop:px-20 mt-4'>
       <h1 className='name desktop:text-5xl tablet:text-2xl text-xl mb-8'>Where I’ve Worked</h1>
-      <div className='flex flex-col gap-4 w-[60%] '>
+      <div className='flex flex-col gap-4 w-full md:w-[60%]  '>
         
         {jobs && jobs.map((job) => (
           <div className='flex justify-between items-center'>

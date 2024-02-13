@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer (props) {
     return (
-        <footer className="footer">
+        <footer className="footer pb-4">
             <div className="footer-content">
                 <h4 className="owner font-spaceFont">
                     Developed by Sanil<br />

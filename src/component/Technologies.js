@@ -61,7 +61,7 @@ function Technologies() {
           </li>
         </ul> */}
 
-        <p className="font-spaceFont flex mt-10 mb-4 text-xl">Here are a few technologies I’ve been working :</p>
+        <p className="font-spaceFont flex mt-10 mb-4 text-xl text-left">Here are a few technologies I’ve been working :</p>
         <ul className="grid grid-cols-2 gap-3 list-none ">
           {skills && skills.map((skill, i) => <li className="relative font-spaceFont mb-[10px] opacity-80 text-lg pl-4 before:content-['▹'] before:text-[#ffa51d] before:text-lg before:mt-2 before:absolute before:left-0 before:leading-3" key={i}>{skill}</li>)}
         </ul>
