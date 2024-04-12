@@ -7,48 +7,16 @@ import Watch from "../img/watch.png";
 import CodeBoard from "../img/codeboard.png";
 import Excel from "../img/excel.png";
 import Sketch from "../img/sketch.png";
-import Card from './card'
 function Project({ dark }) {
     let [hoveredIndex, setHoveredIndex] = useState(null);
     const projects = [
         {
-            id: "1", heading: "Watch E-Commerce", githubLink: "https://github.com/sanil011/watch-store", pic: Watch,
+            id: "1", heading: "Watch E-Commerce", githubLink: "https://github.com/shivam08022002/watch_store", pic: Watch,
             hostedLink: "https://watch-store-sand.vercel.app/", techStack: ["Next.js", "MUI", "Redux"], about: "An E-commerce app for watch. Users can filter the watch according to brand, price, strap and colour.Users can also add watches to their wishlists."
-        },
-        {
-            id: "2", heading: "Code Share", githubLink: "https://github.com/sanil011/code-share", pic: CodeBoard,
-            hostedLink: "https://code-share-ny9d.onrender.com", techStack: ["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"], about: "A code editor in which by sharing the roomId you can write a code that your friend can also see in real time. There is also a doubt section where you can ask your doubt and chat with other memebers."
-        },
-        {
-            id: "3", heading: "Google Doc Clone", githubLink: "https://github.com/sanil011/SketchBoard", pic: Sketch,
-            hostedLink: "https://sketch-board-two.vercel.app/", techStack: ["Vite","React","Typescript","Css"], about: "Express your creativity by sketching anything on the canvas.Save and download your artistic creations.Utilize the zoom functionality for a closer look.Enjoy the panning feature, offering the illusion of an infinite canvas.Take advantage of the Undo and Redo features for added convenience."
-        },
-        // {
-        //     id: "7", heading: "Sketch Board", githubLink: "https://github.com/sanil011/ExcelClone", pic: Excel,
-        //     hostedLink: "https://sanil011.github.io/ExcelClone/", techStack: ["Javascript", "CSS", "HTML"], about: "Comprehensive Doc functionalities. Isolated cell text formatting. Cell-to-cell relationships through formulas.Download and upload capabilities.Cycle detection and formula warning.Cut, copy, paste support. Multi - sheet functionality."
-        // },
-        {
-            id: "4", heading: "Algorithm Visualizer", githubLink: "https://github.com/sanil011/Algorithm-Visualizer", pic: Algorithm,
-            hostedLink: "https://algorithm-visualizer-beige.vercel.app/", techStack: ["Next", "Typescript", "Tailwind"], about: "Show the algorithm in animation how the algorithm works"
-        },
-        {
-            id: "5", heading: "Quiz", githubLink: "https://github.com/sanil011/quiz-app", pic: Quiz,
-            hostedLink: "https://quiz-app-lilac-iota.vercel.app/", techStack: ["Next", "MUI", "React-Router-Dom"], about: "A Quiz app in you can choose a lot of category and give quiz"
-        },
-        {
-            id: "6", heading: "LYRICKS", githubLink: "https://github.com/sanil011/spotify-clone", pic: Spotify,
-            hostedLink: "https://sanil-spotify-clone.netlify.app/", techStack: ["React", "MUI", "Redux", "React-Router-Dom"], about: "Fully responsive Song listening website like Spotify. Search song of their choice and according to the artist. Show popular songs according to their region using geolocation API."
         }
     ]
 
-    const projectLess = [
-        {
-            id: "1", title: "Tic Tac Toe", github: "https://github.com/sanil011/crafts",
-            link: "https://crafts-jade.vercel.app/", tech: ["React", "Tailwindcss"], description: "Create a versatile TicTacToe game with pause/resume, a disabled initial restart button, and real-time status updates. Add a history feature for seamless backward and forward navigation during gameplay."
-        }
-        , { id: "2", title: 'Calender Application', github: "https://github.com/sanil011/calender", link: "https://calender-99b907.netlify.app/", description: "Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting.", tech: ["React", "Firebase", "Redux"] }
-        , { id: "3", title: 'Estate', github: "https://github.com/sanil011/Estates", link: "https://estates-teal.vercel.app/", description: "Fully responsive hotel booking website that i made from scratch using react,tailwind.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers.", tech: ["React", "Tailwind", "Redux", 'MUI'] }
-    ]
+   
     return (
 
         <div className="project" id="project">
@@ -122,14 +90,6 @@ function Project({ dark }) {
                             </div>
                         </div>
                     </div>
-                ))}
-            </div>
-
-            <h1 className='desktop:text-3xl tablet:text-xl text-base font-spaceFont text-center mt-16'>Other Noteworthy Projects</h1>
-            <div className='grid gap-4  grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10 max-w-[1100px] mx-auto'>
-
-                {projectLess.map((project) => (
-                    <Card dark={dark} key={project.id} title={project.title} description={project.description} tech={project.tech} github={project.github} link={project.link} />
                 ))}
             </div>
         </div>

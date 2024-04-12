@@ -10,7 +10,7 @@
 }
 
  nav ul li {
-    --c: #ffa51d;
+    --c: #d0e46c;
     color: var(--c);
     font-size: 16px;
     border: 0.1em solid var(--c);
@@ -34,7 +34,7 @@
     position: absolute;
     width: 25%;
     height: 100%;
-    background-color: var(--c);
+    background-color: #d0e46c;
     transform: translateY(150%);
     border-radius: 50%;
     left: calc((var(--n) - 1) * 25%);
@@ -44,7 +44,7 @@
 }
 
  nav ul li:hover {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
  nav ul li:hover span {

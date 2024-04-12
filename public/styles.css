@@ -32,12 +32,12 @@ body {
 }
 
 .background-light {
-    background-color: white;
+    background-color: rgb(255, 254, 254);
 }
 
 .background {
 
-    color: white;
+    color: rgb(255, 255, 255);
     background: linear-gradient(to right, #161f3b, #141416) !important;
     background-size: cover;
 }
@@ -89,7 +89,7 @@ body {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 3px 0;
     transition: 0.4s;
 }
@@ -249,7 +249,7 @@ display: flex;
 .btn {
     border: 0;
     border-radius: 6px;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 15em;
     height: 2.5em;
     font-size: 1em;
@@ -513,13 +513,13 @@ display: flex;
     bottom: 0;
     left: 0;
     right: 0;
-    color: white;
+    color: rgb(120, 29, 29);
     animation: all .2s cubic-bezier(0.83, 0, 0.17, 1);
     /* height: 100%;
     width: 100%; */
     opacity: 0;
     transition: .2s ease-out;
-    background-color: rgba(128, 128, 128, .8);
+    background-color: rgba(255, 255, 255, 0.8);
     ;
 }
 
